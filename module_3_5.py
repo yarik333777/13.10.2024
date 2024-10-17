@@ -9,7 +9,7 @@ def get_multiplied_digits(number):
 
 result = get_multiplied_digits(40301)
 print(result)
-ts, которая принимает аргумент целое число number и подсчитывает произведение цифр этого числа.
+# которая принимает аргумент целое число number и подсчитывает произведение цифр этого числа.
 
 # Пункты задачи:
 # Напишите функцию get_multiplied_digits и параметр number в ней.
