@@ -1,15 +1,15 @@
 def get_multiplied_digits(number):
     str_number = str(number)
-    if len(str_number) > 1:
-        first = int(str_number[0])
-        return first * get_multiplied_digits(int(str_number[1:]))
-    else:
+    if len(str_number) == 1:
         return int(str_number)
 
+    first = int(str_number[0])
+    rest = int(str_number[1:])
+    return first * get_multiplied_digits(rest)
 
-result = get_multiplied_digits(40203)
+result = get_multiplied_digits(40301)
 print(result)
-# Напиши функцию get_multiplied_digits, которая принимает аргумент целое число number и подсчитывает произведение цифр этого числа.
+ts, которая принимает аргумент целое число number и подсчитывает произведение цифр этого числа.
 
 # Пункты задачи:
 # Напишите функцию get_multiplied_digits и параметр number в ней.
