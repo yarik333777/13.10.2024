@@ -1,14 +1,15 @@
 def get_multiplied_digits(number):
     str_number = str(number)
-    if len(str_number) == 1:
-        return int(str_number)
-
-    first = int(str_number[0])
-    rest = int(str_number[1:])
-    return first * get_multiplied_digits(rest)
-
-result = get_multiplied_digits(40301)
+    if number == 0:
+        return 0
+    result = 1
+    for digit in str_number:
+        if digit != '0':
+            result *= int(digit)
+    return result
+result = get_multiplied_digits(40308)
 print(result)
+
 # которая принимает аргумент целое число number и подсчитывает произведение цифр этого числа.
 
 # Пункты задачи:
